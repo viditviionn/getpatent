@@ -1,5 +1,4 @@
 import { Modal } from "@mui/material";
-import React, { useState } from "react";
 
 export const PatentDetailModal = (props: any) => {
     const { handleCloseModal, selectedPatents, open }: any = props
@@ -16,7 +15,7 @@ export const PatentDetailModal = (props: any) => {
                             <a
                                 href="#"
                                 onClick={() => handlePatentClick(patent.www_link)}
-                                style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
+                                className="my-link"
                             >
                                 {patent.title} - {patent.publication_date}
                             </a>
